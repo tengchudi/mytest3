@@ -1,0 +1,9 @@
+2018-12-24 14:38:00.6614 Error Parsing configuration from F:\工作\学习.netcore\test\test/nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing F:\工作\学习.netcore\test\test/nlog.config.  ---> System.ArgumentException: Unknown log level: Critical
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2018-12-24 14:38:00.6614 Warn Failed loading config from F:\工作\学习.netcore\test\test/nlog.config. Invalid XML?
